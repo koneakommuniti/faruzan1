@@ -1,4 +1,4 @@
-const APP_URL = "https://genshin-wallpaper.web.app";
+const APP_URL = "https://koneakommuniti.github.io/faruzan1/";
 const TOTAL_WALLPAPERS = 87;
 const GAME_TIME = 8;
 const SHAKES_TO_WIN = 60;
