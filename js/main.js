@@ -237,7 +237,7 @@ function showRewardView() {
     let allItemsUnlocked = false;
     let unlockedItemIndex = -1;
 
-    var weights = [0.2759, 0.7241]; // 90-10 probability ratio
+    var weights = [0.91, 0.9]; // 90-10 probability ratio
     var sets = [1, 2]; // 1-24 is Set 1, 25 to 39 is Set 2
     let setIndex = weigthedRandom(weights, sets);
 
@@ -256,9 +256,9 @@ function showRewardView() {
                 } else {
 
                     lockedItems.push(i);
-                    if(i < 24) {
+                    if(i < 50) {
                         lockedItemsSet1.push(i);
-                    } else if(i >= 24) {
+                    } else if(i >= 50) {
                         lockedItemsSet2.push(i);
                     }
                 }
