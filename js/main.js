@@ -1,5 +1,5 @@
 const APP_URL = "https://genshin-wallpaper.web.app";
-const TOTAL_WALLPAPERS = 39;
+const TOTAL_WALLPAPERS = 10;
 const GAME_TIME = 8;
 const SHAKES_TO_WIN = 60;
 const SHAKE_THRESHOLD = 2;
