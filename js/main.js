@@ -238,7 +238,7 @@ function showRewardView() {
     let unlockedItemIndex = -1;
 
     var weights = [0.91, 0.9]; // 90-10 probability ratio
-    var sets = [1, 2]; // 1-24 is Set 1, 25 to 39 is Set 2
+    var sets = [1, 2]; // 1-50 is Set 1, 51 to 97 is Set 2
     let setIndex = weigthedRandom(weights, sets);
 
     if (typeof(Storage) !== "undefined") {
@@ -336,9 +336,9 @@ function showRewardView() {
 
             // Generate random as per probability
             if (setIndex == 1) {
-                unlockedItemIndex = randomInteger(0, 25-1); // 0-25 have 80% probablity
+                unlockedItemIndex = randomInteger(0, 50-1); // 0-50 have 80% probablity
             } else if(setIndex == 2) {
-                unlockedItemIndex = randomInteger(25, TOTAL_WALLPAPERS); // 0-39 have 20% probablity
+                unlockedItemIndex = randomInteger(50, TOTAL_WALLPAPERS); // 0-87 have 20% probablity
             }
 
             wallpaperItems[unlockedItemIndex] = 1;
