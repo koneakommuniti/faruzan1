@@ -256,9 +256,9 @@ function showRewardView() {
                 } else {
 
                     lockedItems.push(i);
-                    if(i < 24) {
+                    if(i < 44) {
                         lockedItemsSet1.push(i);
-                    } else if(i >= 24) {
+                    } else if(i >= 44) {
                         lockedItemsSet2.push(i);
                     }
                 }
