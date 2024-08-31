@@ -1,5 +1,5 @@
 const APP_URL = "https://koneakommuniti.github.io/faruzan1/";
-const TOTAL_WALLPAPERS = 81;
+const TOTAL_WALLPAPERS = 83;
 const GAME_TIME = 8;
 const SHAKES_TO_WIN = 60;
 const SHAKE_THRESHOLD = 2;
@@ -238,7 +238,7 @@ function showRewardView() {
     let unlockedItemIndex = -1;
 
     var weights = [0.91, 0.09]; // 90-10 probability ratio
-    var sets = [1, 2]; // 1-66 is Set 1, 67 to 81 is Set 2
+    var sets = [1, 2]; // 1-68 is Set 1, 69 to 83 is Set 2
     let setIndex = weigthedRandom(weights, sets);
 
     if (typeof(Storage) !== "undefined") {
@@ -256,9 +256,9 @@ function showRewardView() {
                 } else {
 
                     lockedItems.push(i);
-                    if(i < 66) {
+                    if(i < 68) {
                         lockedItemsSet1.push(i);
-                    } else if(i >= 66) {
+                    } else if(i >= 68) {
                         lockedItemsSet2.push(i);
                     }
                 }
@@ -336,9 +336,9 @@ function showRewardView() {
 
             // Generate random as per probability
             if (setIndex == 1) {
-                unlockedItemIndex = randomInteger(0, 67-1); // 0-66 have 80% probablity
+                unlockedItemIndex = randomInteger(0, 69-1); // 0-68 have 80% probablity
             } else if(setIndex == 2) {
-                unlockedItemIndex = randomInteger(67, TOTAL_WALLPAPERS); // 0-81 have 20% probablity
+                unlockedItemIndex = randomInteger(69, TOTAL_WALLPAPERS); // 0-83 have 20% probablity
             }
 
             wallpaperItems[unlockedItemIndex] = 1;
